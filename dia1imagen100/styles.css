@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  background: rgb(90, 90, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(90, 90, 247, 1) 21%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  height: 500px;
+  width: 500px;
+}
+
+.cien {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.one {
+  height: 80%;
+  width: 10%;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  left: 6%;
+  z-index: 2;
+  filter: drop-shadow(1px 1px 9px #0000002f);
+}
+
+.detalle {
+  position: absolute;
+  height: 30%;
+  width: 8%;
+  background-color: white;
+  border-radius: 5px;
+  transform: rotate(50deg);
+  left: 5%;
+  top: 10%;
+}
+
+.cero_1 {
+  height: 80%;
+  width: 40%;
+  border-radius: 50%;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -3%;
+  filter: drop-shadow(1px 1px 9px #0000002f);
+  z-index: 1;
+}
+
+.cero_1::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background: rgb(90, 90, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(90, 90, 247, 1) 21%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  z-index: 2;
+}
+
+.cero_2 {
+  height: 80%;
+  width: 40%;
+  border-radius: 50%;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -3%;
+  filter: drop-shadow(1px 1px 9px #0000002f);
+}
+
+.cero_2::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background: rgb(90, 90, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(90, 90, 247, 1) 21%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  z-index: 1;
+}
+
+.info {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info h1 {
+  font-size: 10rem;
+  line-height: 70%;
+}
+
+.info p {
+  font-size: 3rem;
+  font-weight: bold;
+}
