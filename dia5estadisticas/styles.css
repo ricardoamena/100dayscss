@@ -37,3 +37,28 @@ body {
   text-transform: uppercase;
 }
 
+.small {
+  position: absolute;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.title {
+  top: 25%;
+  left: 5%;
+}
+
+.date {
+  top: 55%;
+  left: 5%;
+}
+
+.type {
+  top: 30%;
+  right: 5%;
+}
+
+.value {
+  top: 50%;
+  right: 5%;
+}
