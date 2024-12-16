@@ -54,11 +54,54 @@ body {
 }
 
 .type {
-  top: 30%;
+  top: 25%;
   right: 5%;
 }
 
 .value {
-  top: 50%;
+  top: 45%;
   right: 5%;
 }
+
+/* Parametros */
+
+.parameter {
+  color: #606060;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 50px;
+}
+
+.parameter span {
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0 20px 0 25px;
+}
+
+.red::before {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  display: block;
+  content: "";
+  width: 25px;
+  height: 20%;
+  border-radius: 3px;
+  background-color: #fa7373;
+}
+
+.blue::before {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  display: block;
+  content: "";
+  width: 25px;
+  height: 20%;
+  border-radius: 3px;
+  background-color: #485afa;
+}
+
