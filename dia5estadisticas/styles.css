@@ -220,7 +220,129 @@ svg {
   color: white;
   display: grid;
   place-items: top;
-  /* opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
   transition: 0.4s ease-out;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 70% 75%, 50% 100%, 30% 75%, 0 75%);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    70% 75%,
+    50% 100%,
+    30% 75%,
+    0 75%
+  );
 }
+
+.point:hover .tooltip {
+  visibility: visible;
+  bottom: 30px;
+  opacity: 1;
+}
+
+/* Red Line */
+
+/* Blue Line */
+
+.point.second {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #7ba2ff;
+}
+
+.data.azul polyline {
+  fill: none;
+  stroke-width: 3;
+  stroke: #7ba2ff;
+  stroke-linecap: round;
+}
+
+.point.one.second {
+  left: 0px;
+  top: 195px;
+}
+.point.two.second {
+  left: 105px;
+  top: 145px;
+}
+.point.three.second {
+  left: 210px;
+  top: 172px;
+}
+.point.four.second {
+  left: 315px;
+  top: 134px;
+}
+.point.five.second {
+  left: 420px;
+  top: 154px;
+}
+.point.six.second {
+  left: 525px;
+  top: 194px;
+}
+.point.seven.second {
+  left: 630px;
+  top: 155px;
+}
+
+.tooltip2 {
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translate3d(-50%, 0px, 0);
+  font-size: 16px;
+  line-height: 35px;
+  padding: 0px 6px 10px 6px;
+  border-radius: 5px;
+  background-color: #7ba2ff;
+  font-weight: bold;
+  color: white;
+  display: grid;
+  place-items: top;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s ease-out;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    70% 75%,
+    50% 100%,
+    30% 75%,
+    0 75%
+  );
+}
+
+.point:hover .tooltip2 {
+  visibility: visible;
+  bottom: 30px;
+  opacity: 1;
+}
+
+/* Blue Line */
+
+/* Days */
+
+.days {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.day {
+  display: block;
+  float: left;
+  font-size: 15px;
+  color: #949494;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Days */
