@@ -105,3 +105,122 @@ body {
   background-color: #485afa;
 }
 
+/* Parameter */
+
+/* Grafico */
+
+.grafico {
+  position: relative;
+  height: 55%;
+  width: 90%;
+  margin: auto;
+}
+
+.line1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #f2f2f2;
+}
+
+.line2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #f2f2f2;
+}
+
+.line3 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #f2f2f2;
+}
+
+/* Grafico */
+
+/* Red Line */
+
+svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  line-height: 1.15;
+}
+
+.data.rojo polyline {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke: #fa7373;
+}
+
+.point {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #fa7373;
+  transform: translateX(-7px);
+}
+
+.point.one {
+  left: 0px;
+  top: 122px;
+}
+.point.two {
+  left: 105px;
+  top: 27px;
+}
+.point.three {
+  left: 210px;
+  top: 55px;
+}
+.point.four {
+  left: 315px;
+  top: 16px;
+}
+.point.five {
+  left: 420px;
+  top: 94px;
+}
+.point.six {
+  left: 525px;
+  top: 123px;
+}
+.point.seven {
+  left: 630px;
+  top: 27px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translate3d(-50%, 0px, 0);
+  font-size: 16px;
+  line-height: 35px;
+  padding: 0px 6px 10px 6px;
+  border-radius: 5px;
+  background-color: #fa7373;
+  font-weight: bold;
+  color: white;
+  display: grid;
+  place-items: top;
+  /* opacity: 0; */
+  transition: 0.4s ease-out;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 70% 75%, 50% 100%, 30% 75%, 0 75%);
+}
