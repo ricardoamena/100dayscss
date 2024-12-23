@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background-color: black;
+  filter: contrast(25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  position: absolute;
+}
+
+.ball {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 50%;
+  filter: blur(15px);
+}
+
+.ball-1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+  transform: rotate(123deg);
+}
+
+.ball-1:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transform-origin: 90px 90px;
+  animation: rotate 2.7s ease-in-out infinite;
+  animation-delay: 0.2s;
+  filter: blur(5px);
+}
+
+.ball-2 {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  width: 160px;
+  height: 160px;
+  transform: rotate(50deg);
+}
+
+.ball-2:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transform-origin: 70px 70px;
+  animation: rotate 2.9s ease-in-out infinite;
+  animation-delay: 0.4s;
+  filter: blur(5px);
+}
+
+.ball-3 {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 140px;
+  height: 140px;
+  transform: rotate(20deg);
+}
+
+.ball-3:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 110px;
+  height: 110px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transform-origin: 110px 110px;
+  animation: rotate 3.9s ease-in-out infinite;
+  animation-delay: 0.8s;
+  filter: blur(5px);
+}
+
+.ball-4 {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 130px;
+  height: 130px;
+  transform: rotate(20deg);
+}
+
+.ball-4:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 110px;
+  height: 110px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transform-origin: 110px 110px;
+  animation: rotate 4.9s ease-in-out infinite;
+  animation-delay: 0.8s;
+  filter: blur(5px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate3d(0, 0, 0);
+  }
+}
