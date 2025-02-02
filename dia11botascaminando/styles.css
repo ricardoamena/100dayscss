@@ -5,13 +5,15 @@
 }
 
 body {
-  height: 100hv;
+  height: 100vh;
 
   display: grid;
   place-items: center;
+  
 }
 
 .container {
+
   height: 400px;
   width: 400px;
   background: rgb(231, 198, 97);
@@ -20,4 +22,75 @@ body {
     rgba(231, 198, 97, 1) 47%,
     rgba(255, 220, 153, 1) 100%
   );
+  border-radius: 15px;
+  position: relative;
+}
+
+.pierna {
+    position: absolute;
+    top: 0;
+    left: 147px;
+    width: 151px;
+    height: 245px;
+    transform-origin: 50% 0;
+    ;
+}
+
+.pierna.izq {
+    animation: pierna-izq 2s ease-in-out infinite;
+}
+
+.pierna.der {
+    animation: pierna-der 2s ease-in-out 1s infinite;
+}
+
+@keyframes pierna-izq {
+    0%, 100% {
+        transform: rotate(-22deg);
+    }
+
+    50% {
+        transform: rotate(40deg);
+    }
+}
+
+@keyframes pierna-der {
+    0%, 100% {
+        transform: rotate(-22deg);
+    }
+
+    50% {
+        transform: rotate(40deg);
+    }
+}
+
+.zap-izq {
+    position: absolute;
+    width: 170px;
+    height: 148px;
+    left: 0;
+    bottom: 0;
+    background-image: url(/dia11botascaminando/zapato.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.zap-der {
+    position: absolute;
+    width: 170px;
+    height: 148px;
+    left: 0;
+    bottom: 0;
+    background-image: url(/dia11botascaminando/zapato.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.suelo {
+    position: absolute;
+    height: 47%;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+    border-radius: 0 0 15px 15px;
 }
