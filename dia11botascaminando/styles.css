@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100hv;
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  background: rgb(231, 198, 97);
+  background: linear-gradient(
+    242deg,
+    rgba(231, 198, 97, 1) 47%,
+    rgba(255, 220, 153, 1) 100%
+  );
+}
